@@ -10,7 +10,7 @@
 
   <body>
     <div class="navbaritem">
-      <a href="rp_asci.html" class="navitem12">Rating Peralatan (ASCI)</a>
+      <a href="index.html" class="navitem12">Rating Peralatan (ANSI)</a>
       <a href="rp_iec.html" class="navitem12">Rating Peralatan (IEC)</a>
       <a href="spb_3.html" class="navitem12"
         >Skema Pelepasan Beban (3 Langkah)</a
@@ -20,6 +20,117 @@
       >
     </div>
 
-    SELAMAT DATANG WELKOM INI DIISI APA YEEE
+    <h1>Rating Peralatan Standar ANSI</h1>
+    <div class="container">
+      <div class="column">
+        <h1>Perhitungan Spesifikasi HVCB</h1>
+        <label for="substation1">Substation</label>
+        <input type="text" id="substation1" placeholder="Enter value" />
+
+        <label for="kv1">kV</label>
+        <input type="number" id="kv1" placeholder="Enter value" />
+
+        <label for="cb_id1">CB ID</label>
+        <input type="text" id="cb_id1" placeholder="Enter value" />
+
+        <label for="load_desc1">Load Desc</label>
+        <input type="text" id="load_desc1" placeholder="Enter value" />
+
+        <label for="load1">Load (kVA)</label>
+        <input type="number" id="load1" placeholder="Enter value" />
+
+        <label for="max_kv1">Max kV CB</label>
+        <input type="number" id="max_kv1" placeholder="Enter value" />
+
+        <label for="load_fla1">Load FLA</label>
+        <input type="number" id="load_fla1" placeholder="Enter value" />
+
+        <label for="rated_int1">Rated Int. (kA)</label>
+        <input type="number" id="rated_int1" placeholder="Enter value" />
+
+        <label for="cb_fla1">CB FLA</label>
+        <input type="text" id="cb_fla1" readonly />
+
+        <label for="max_int1">Max Int. (kA)</label>
+        <input type="text" id="max_int1" readonly />
+
+        <label for="cl_rms1">C & L RMS</label>
+        <input type="text" id="cl_rms1" readonly />
+
+        <label for="cl_peak1">C & L Peak</label>
+        <input type="text" id="cl_peak1" readonly />
+      </div>
+
+      <div class="column">
+        <h1>Perhitungan Spesifikasi LVCB</h1>
+        <label for="substation2">Substation</label>
+        <input type="text" id="substation2" placeholder="Enter value" />
+
+        <label for="kv2">kV</label>
+        <input type="number" id="kv2" placeholder="Enter value" />
+
+        <label for="cb_id2">CB ID</label>
+        <input type="text" id="cb_id2" placeholder="Enter value" />
+
+        <label for="load_desc2">Load Desc</label>
+        <input type="text" id="load_desc2" placeholder="Enter value" />
+
+        <label for="load2">Load (kVA)</label>
+        <input type="number" id="load2" placeholder="Enter value" />
+
+        <label for="load_fla2">Load FLA</label>
+        <input type="number" id="load_fla2" placeholder="Enter value" />
+
+        <label for="rated_kv2">Rated kV</label>
+        <input type="number" id="rated_kv2" placeholder="Enter value" />
+
+        <label for="interuppting2">Interrupting kA</label>
+        <input type="number" id="interrupting2" placeholder="Enter value" />
+
+        <label for="tkr2">Tkr</label>
+        <input type="number" id="tkr2" placeholder="Enter value" />
+
+        <label for="st_withstand2">ST Withstand</label>
+        <input type="number" id="st_withstand2" placeholder="Enter value" />
+
+        <label for="test_pf2">Test PF</label>
+        <input type="number" id="test_pf2" placeholder="Enter value" />
+
+        <label for="cb_fla2">CB FLA</label>
+        <input type="text" id="cb_fla2" readonly />
+      </div>
+
+      <div class="column">
+        <h1>Perhitungan Spesifikasi Busbar</h1>
+        <label for="substation3">Substation</label>
+        <input type="text" id="substation3" placeholder="Enter value" />
+
+        <label for="kv3">kV</label>
+        <input type="number" id="kv3" placeholder="Enter value" />
+
+        <label for="id3">ID</label>
+        <input type="text" id="id3" placeholder="Enter value" />
+
+        <label for="load_fla3">Load FLA (A)</label>
+        <input type="number" id="load_fla3" placeholder="Enter value" />
+
+        <label for="asymm_rms3">Asymm. rms (kA)</label>
+        <input type="number" id="asymm_rms3" placeholder="Enter value" />
+
+        <label for="symm_rms3">Symm. rms (kA)</label>
+        <input type="number" id="symm_rms3" placeholder="Enter value" />
+
+        <label for="peak3">Peak (kA)</label>
+        <input type="number" id="peak3" placeholder="Enter value" />
+
+        <label for="continuous3">Continuous (A)</label>
+        <input type="text" id="continuous3" readonly />
+      </div>
+    </div>
+
+    <img src="tabel ngasal.png" />
+    <br />ini tabel ngasal dlu
+
+    <script src="rp_ansi.js"></script>
   </body>
 </html>
