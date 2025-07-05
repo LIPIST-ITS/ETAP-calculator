@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>LIPIST - ETAP Calculator</title>
+  </head>
+
+  <body>
+    <div class="navbaritem">
+      <a href="index.html" class="navitem12">Rating Peralatan (ANSI)</a>
+      <a href="rp_iec.html" class="navitem12">Rating Peralatan (IEC)</a>
+      <a href="spb_3.html" class="navitem12"
+        >Skema Pelepasan Beban (3 Langkah)</a
+      >
+      <a href="spb_6.html" class="navitem12"
+        >Skema Pelepasan Beban (6 Langkah)</a
+      >
+    </div>
+
+
+    <h1>Skema Pelepasan Beban 6 Langkah</h1>
+    <table>
+      <tr>
+        <th>Frequency Trip</th>
+        <th>%freq</th>
+        <th>Waktu Trip Point</th>
+        <th>Time Delay</th>
+        <th>Waktu Total</th>
+      </tr>
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="freq_trip1"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input class="input_tabel" type="text" id="percent_freq1" readonly />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="waktu_trip1"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>0.12</td>
+        <td>
+          <input class="input_tabel" type="text" id="waktu_total1" readonly />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="freq_trip2"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input class="input_tabel" type="text" id="percent_freq2" readonly />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="waktu_trip2"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>0.12</td>
+        <td>
+          <input class="input_tabel" type="text" id="waktu_total2" readonly />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="freq_trip3"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input class="input_tabel" type="text" id="percent_freq3" readonly />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="waktu_trip3"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>0.12</td>
+        <td>
+          <input class="input_tabel" type="text" id="waktu_total3" readonly />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="freq_trip4"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input class="input_tabel" type="text" id="percent_freq4" readonly />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="waktu_trip4"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>0.28</td>
+        <td>
+          <input class="input_tabel" type="text" id="waktu_total4" readonly />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="freq_trip5"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input class="input_tabel" type="text" id="percent_freq5" readonly />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="waktu_trip5"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>0.28</td>
+        <td>
+          <input class="input_tabel" type="text" id="waktu_total5" readonly />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="freq_trip6"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input class="input_tabel" type="text" id="percent_freq6" readonly />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="waktu_trip6"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>0.42</td>
+        <td>
+          <input class="input_tabel" type="text" id="waktu_total6" readonly />
+        </td>
+      </tr>
+    </table>
+
+    <br /><br />
+    <table>
+      <tr>
+        <th>Tahap LS</th>
+        <th>Daya Aktual Sistem</th>
+        <th>Daya Minimal LS</th>
+        <th>Daya LS Aktual</th>
+        <th>Daya Setelah LS</th>
+      </tr>
+
+      <tr>
+        <th>LS1 (10%)</th>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya_aktual1a"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input class="input_tabel" type="text" id="daya_minimal1a" readonly />
+        </td>
+        <td>
+          <input class="input_tabel" type="text" id="daya_ls1a" readonly />
+        </td>
+        <td>
+          <input class="input_tabel" type="text" id="daya_setelah1a" readonly />
+        </td>
+      </tr>
+
+      <tr>
+        <th>LS2 (10%)</th>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya_aktual2a"
+            readonly
+          />
+        </td>
+        <td>
+          <input class="input_tabel" type="text" id="daya_minimal2a" readonly />
+        </td>
+        <td>
+          <input class="input_tabel" type="text" id="daya_ls2a" readonly />
+        </td>
+        <td>
+          <input class="input_tabel" type="text" id="daya_setelah2a" readonly />
+        </td>
+      </tr>
+
+      <tr>
+        <th>LS3(5%)</th>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya_aktual3a"
+            readonly
+          />
+        </td>
+        <td>
+          <input class="input_tabel" type="text" id="daya_minimal3a" readonly />
+        </td>
+        <td>
+          <input class="input_tabel" type="text" id="daya_ls3a" readonly />
+        </td>
+        <td>
+          <input class="input_tabel" type="text" id="daya_setelah3a" readonly />
+        </td>
+      </tr>
+
+      <tr>
+        <th>LS4(5%)</th>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya_aktual4a"
+            readonly
+          />
+        </td>
+        <td>
+          <input class="input_tabel" type="text" id="daya_minimal4a" readonly />
+        </td>
+        <td>
+          <input class="input_tabel" type="text" id="daya_ls4a" readonly />
+        </td>
+        <td>
+          <input class="input_tabel" type="text" id="daya_setelah4a" readonly />
+        </td>
+      </tr>
+
+      <tr>
+        <th>LS5(5%)</th>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya_aktual5a"
+            readonly
+          />
+        </td>
+        <td>
+          <input class="input_tabel" type="text" id="daya_minimal5a" readonly />
+        </td>
+        <td>
+          <input class="input_tabel" type="text" id="daya_ls5a" readonly />
+        </td>
+        <td>
+          <input class="input_tabel" type="text" id="daya_setelah5a" readonly />
+        </td>
+      </tr>
+
+      <tr>
+        <th>LS6(5%)</th>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya_aktual6a"
+            readonly
+          />
+        </td>
+        <td>
+          <input class="input_tabel" type="text" id="daya_minimal6a" readonly />
+        </td>
+        <td>
+          <input class="input_tabel" type="text" id="daya_ls6a" readonly />
+        </td>
+        <td>
+          <input class="input_tabel" type="text" id="daya_setelah6a" readonly />
+        </td>
+      </tr>
+    </table>
+
+    <br /><br />
+    <table>
+      <tr>
+        <th>Tahap LS</th>
+        <th>ID Beban</th>
+        <th>Daya (kW)</th>
+        <th>Total (MW)</th>
+      </tr>
+
+      <tr>
+        <th rowspan="7">LS1</th>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban1a"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya1a"
+            placeholder="Enter value"
+          />
+        </td>
+        <td rowspan="7">
+          <input class="input_tabel" type="text" id="total1a" readonly />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban2a"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya2a"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban3a"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya3a"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban4a"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya4a"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban5a"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya5a"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban6a"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya6a"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban7a"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya7a"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <th rowspan="7">LS2</th>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban1b"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya1b"
+            placeholder="Enter value"
+          />
+        </td>
+        <td rowspan="7">
+          <input class="input_tabel" type="text" id="total1b" readonly />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban2b"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya2b"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban3b"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya3b"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban4b"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya4b"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban5b"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya5b"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban6b"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya6b"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban7b"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya7b"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <th rowspan="7">LS3</th>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban1c"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya1c"
+            placeholder="Enter value"
+          />
+        </td>
+        <td rowspan="7">
+          <input class="input_tabel" type="text" id="total1c" readonly />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban2c"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya2c"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban3c"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya3c"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban4c"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya4c"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban5c"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya5c"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban6c"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya6c"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban7c"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya7c"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+      <tr>
+        <th rowspan="7">LS4</th>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban1d"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya1d"
+            placeholder="Enter value"
+          />
+        </td>
+        <td rowspan="7">
+          <input class="input_tabel" type="text" id="total1d" readonly />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban2d"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya2d"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban3d"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya3d"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban4d"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya4d"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban5d"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya5d"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban6d"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya6d"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban7d"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya7d"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <th rowspan="7">LS5</th>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban1e"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya1e"
+            placeholder="Enter value"
+          />
+        </td>
+        <td rowspan="7">
+          <input class="input_tabel" type="text" id="total1e" readonly />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban2e"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya2e"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban3e"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya3e"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban4e"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya4e"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban5e"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya5e"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban6e"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya6e"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban7e"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya7e"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <th rowspan="7">LS6</th>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban1f"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya1f"
+            placeholder="Enter value"
+          />
+        </td>
+        <td rowspan="7">
+          <input class="input_tabel" type="text" id="total1f" readonly />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban2f"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya2f"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban3f"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya3f"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban4f"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya4f"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban5f"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya5f"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban6f"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya6f"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <input
+            class="input_tabel"
+            type="text"
+            id="id_beban7f"
+            placeholder="Enter value"
+          />
+        </td>
+        <td>
+          <input
+            class="input_tabel"
+            type="number"
+            id="daya7f"
+            placeholder="Enter value"
+          />
+        </td>
+      </tr>
+    </table>
+
+    <script src="spb_6.js"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  font-size: 15px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbaritem {
+  width: auto;
+  height: auto;
+  background: #f0f0f0;
+  padding: 10px;
+  text-align: center;
+  grid-template-columns: repeat(4, 1fr); /* Create 3 equal-width columns */
+  justify-items: center; /* Center items horizontally in each cell */
+}
+
+.navitem12 {
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: black;
+  font-size: 15px;
+  padding: 60px;
+}
+
+.container {
+  display: table;
+}
+
+.column {
+  height: auto;
+  background: #ffffff;
+  float: left;
+  width: auto;
+  margin-right: 100px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 3px;
+  font-size: 12px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+input[readonly] {
+  background-color: #f0f0f0;
+}
+
+img {
+  width: auto;
+  height: 120px;
+  margin-top: 50px;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.input_tabel {
+  width: 90px;
+  font-size: 12px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+}
+
+.input_fbase {
+  width: 90%;
+}
