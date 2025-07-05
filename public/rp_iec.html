@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>LIPIST - ETAP Calculator</title>
+  </head>
+
+  <body>
+    <div class="navbaritem">
+      <a href="rp_asci.html" class="navitem12">Rating Peralatan (ASCI)</a>
+      <a href="rp_iec.html" class="navitem12">Rating Peralatan (IEC)</a>
+      <a href="spb_3.html" class="navitem12"
+        >Skema Pelepasan Beban (3 Langkah)</a
+      >
+      <a href="spb_6.html" class="navitem12"
+        >Skema Pelepasan Beban (6 Langkah)</a
+      >
+    </div>
+
+    <div class="container">
+      <div class="column">
+        <h1>Perhitungan Spesifikasi HVCB</h1>
+        <label for="substation4">Substation</label>
+        <input type="text" id="substation4" placeholder="Enter value" />
+
+        <label for="kv4">kV</label>
+        <input type="number" id="kv4" placeholder="Enter value" />
+
+        <label for="cb_id4">CB ID</label>
+        <input type="text" id="cb_id4" placeholder="Enter value" />
+
+        <label for="load_desc4">Load Desc</label>
+        <input type="text" id="load_desc4" placeholder="Enter value" />
+
+        <label for="load4">Load (kVA)</label>
+        <input type="number" id="load4" placeholder="Enter value" />
+
+        <label for="load_fla4">Load FLA (A)</label>
+        <input type="number" id="load_fla4" placeholder="Enter value" />
+
+        <label for="ac_breaking4">AC Breaking (kA)</label>
+        <input type="number" id="ac_breaking4" placeholder="Enter value" />
+
+        <label for="rated_kv4">Rated kV CB</label>
+        <input type="number" id="rated_kv4" placeholder="Enter value" />
+
+        <label for="ithr_4">Ithr</label>
+        <input type="number" id="ithr_4" placeholder="Enter value" />
+
+        <label for="tkr_4">Tkr</label>
+        <input type="number" id="tkr_4" placeholder="Enter value" />
+
+        <label for="min_delay4">Min. Delay</label>
+        <input type="number" id="min_delay4" placeholder="Enter value" />
+
+        <label for="cb_fla4">CB FLA (A)</label>
+        <input type="text" id="cb_fla4" readonly />
+
+        <label for="making_peak4">Making Peak (kA)</label>
+        <input type="text" id="making_peak4" readonly />
+      </div>
+
+      <div class="column">
+        <h1>Perhitungan Spesifikasi LVCB</h1>
+        <label for="substation5">Substation</label>
+        <input type="text" id="substation5" placeholder="Enter value" />
+
+        <label for="kv5">kV</label>
+        <input type="number" id="kv5" placeholder="Enter value" />
+
+        <label for="cb_id5">CB ID</label>
+        <input type="text" id="cb_id5" placeholder="Enter value" />
+
+        <label for="load_desc5">Load Desc</label>
+        <input type="text" id="load_desc5" placeholder="Enter value" />
+
+        <label for="load5">Load (kVA)</label>
+        <input type="number" id="load5" placeholder="Enter value" />
+
+        <label for="load_fla5">Load FLA (A)</label>
+        <input type="number" id="load_fla5" placeholder="Enter value" />
+
+        <label for="ultimate_breaking5">Ultimate Breaking (kA)</label>
+        <input
+          type="number"
+          id="ultimate_breaking5"
+          placeholder="Enter value"
+        />
+
+        <label for="service_breaking5">Service Breaking (kA)</label>
+        <input type="number" id="service_breaking5" placeholder="Enter value" />
+
+        <label for="rated_kv5">Rated kV</label>
+        <input type="number" id="rated_kv5" placeholder="Enter value" />
+
+        <label for="st_withstand5">Interrupting kA</label>
+        <input type="number" id="st_withstand5" placeholder="Enter value" />
+
+        <label for="tkr5">Tkr</label>
+        <input type="number" id="tkr5" placeholder="Enter value" />
+
+        <label for="min_delay5">ST Withstand</label>
+        <input type="number" id="min_delay5" placeholder="Enter value" />
+
+        <label for="cb_fla5">CB FLA (A)</label>
+        <input type="text" id="cb_fla5" readonly />
+
+        <label for="making_peak5">Making Peak (kA)</label>
+        <input type="text" id="making_peak5" readonly />
+      </div>
+
+      <div class="column">
+        <h1>Perhitungan Spesifikasi Busbar</h1>
+        <label for="substation6">Substation</label>
+        <input type="text" id="substation6" placeholder="Enter value" />
+
+        <label for="kv6">kV</label>
+        <input type="number" id="kv6" placeholder="Enter value" />
+
+        <label for="id6">ID</label>
+        <input type="text" id="id6" placeholder="Enter value" />
+
+        <label for="category6">Category</label>
+        <input type="number" id="category6" placeholder="Enter value" />
+
+        <label for="fla6">FLA (A)</label>
+        <input type="number" id="fla6" placeholder="Enter value" />
+
+        <label for="ac_breaking6">AC Breaking (kA)</label>
+        <input type="number" id="ac_breaking6" placeholder="Enter value" />
+
+        <label for="making_peak6">Making Peak (kA)</label>
+        <input type="text" id="making_peak6" readonly />
+      </div>
+    </div>
+
+    <script src="rp_iec.js"></script>
+  </body>
+</html>
