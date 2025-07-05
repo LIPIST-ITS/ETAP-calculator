@@ -2,13 +2,13 @@
     "rewrites": [
       {
         "source": "/(.*)",
-        "destination": "/index.html"
+        "destination": "/rp_asci.html"
       }
     ],
     "redirects": [
       {
         "source": "/(.*)",
-        "destination": "/index.html",
+        "destination": "/rp_asci.html",
         "statusCode": 404
       }
     ]
